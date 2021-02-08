@@ -1,3 +1,6 @@
+* {
+	box-sizing: border-box;
+  }
 html {
     scroll-behavior: smooth;
   }
@@ -5,12 +8,17 @@ body{
     margin: 0;
     padding: 0;
     font-family: Futura,Trebuchet MS,Arial,sans-serif; 
-    /* background-color: rgb(255, 255, 255) ;*/
    
-    /* background-position: 50% 0;
-    height: 800px; */
 } 
 
+/* la partie navbar */
+.parallax {
+
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: 50% 0;
+	height: 800px;
+  }
 .colorModif {
     background-color:#282e34 ;
    height: 54px;
@@ -20,10 +28,10 @@ body{
    margin-bottom: 10px;
    margin-left: 10px;
 }
-.navbarChange li, .linav2 li{
+.navbarChange li, .linav2 li {
     display: inline-block;
     padding: 0px 7px;
-    color: rgb(245, 232, 212);
+    color: rgb(255, 255, 255);
     font-size: 18px;
     font-family: Futura,Trebuchet MS,Arial,sans-serif; 
 }
@@ -39,13 +47,9 @@ body{
 }
 
  nav.nav2{
-  /* margin: 50px 160px; 
-
-    background-color: white;
-    width: 100%;
-    z-index: 2; */
+ 
     padding: 40px 0 40px 200px;
-    /* padding-left: 200px; */
+  
 }
 
 .sticky {
@@ -131,7 +135,7 @@ body{
 .card-price{
 text-align: right;
 }
-/* partie selection et cadeau */
+/* partie selection , cadeau , parfum et maquillage */
 
 .voirPlus {
 	display: flex;
@@ -344,3 +348,221 @@ footer{
    text-decoration: underline;
     color: white;
 }
+/************************ style pour la page page_parfum ***********************************/
+input[type=search] {
+	width: 200px;
+	background-color:#282e34 ;
+	color: white;
+	-webkit-transition: width 0.4s ease-in-out;
+	transition: width 0.4s ease-in-out;
+  }
+
+  input[type=search]:hover {
+	background-color:#282e34 ;
+	width: 400px;
+	color: white;
+  }
+  input[type=search]:focus {
+	background-color:#282e34 ;
+
+	color: white;
+  }
+  .d-flex{
+	margin-left: 370px;
+
+  }
+  /* style pour la carousel */
+  .carousel_parfum{
+	  margin-bottom: 70px;
+  }
+  /* style pour la bar de recherche */
+  .btn-search{
+	  margin-left: 10px;
+	  font-size: 17px;
+	  background-color:#282e34 !important ;
+	  color:white !important ;
+  }
+  .btn-search:hover{
+	  color:rgb(153, 33, 51)!important  ;
+  }
+  /* style pour la bar de marques */
+ 
+  .marque_nom ul li{
+	  margin: 0 40px;
+	  display: inline;
+  }
+  /*style pour le filtre*/
+
+  .filtre{
+	  background-color:#282e34 ;
+	position: absolute;
+	left: 0; 
+	width: 360px;
+	height: 1300px;
+	color: white;
+	padding: 30px 30px 30px 40px;
+	border-radius: 0 0 50px 0;
+  }
+ input[type=number]{
+	padding: 6px 10px;
+	margin: 6px;
+ }
+.form_filtre hr{
+margin-bottom: 20px;
+}
+.form_filtre ul{
+    list-style-type: none;
+ 
+}
+.form_filtre input{
+    border:none ;
+}
+  /* checkmarks */
+  .form-check-input{
+	border: 2px solid black !important;
+	background-color: #282e34;
+	font-size: 20px;
+	margin-right: 22px;
+  }
+  .form-check-input:checked{
+background-color: black;
+  }
+  .form-check  li{
+	  margin: 40px 9px;
+  }
+  
+   .labelSize{
+	 font-size: 22px;
+   }
+  /* style pour le boutton de recherche */
+  #submit{
+  
+  
+    margin-top: 40px;
+    margin-left: 20px;
+    cursor: pointer;
+  }
+  #submit:hover{
+    background-color:white !important ;
+	color:#282e34 !important ;
+  }
+  .filtre ul{
+    list-style-type: none;
+ 
+}
+.filtre input{
+    border:none ;
+}
+.annonce{
+	margin-right: 25px;
+	margin-left: 20px;
+}
+.annonce h4{
+
+	font-size: 19px;
+	font-weight: bold;
+	margin-bottom: 40px;
+
+}
+.annonce p{
+	text-align: justify;
+	text-justify: inter-word;
+	
+}
+
+/* style des cards */
+
+    /* Center website */
+
+  
+  h1 {
+	font-size: 50px;
+	word-break: break-all;
+  }
+  
+  
+  /* Add padding BETWEEN each column */
+  .row-card-contenu,
+  .row-card-contenu> .column {
+	padding: 8px;
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .column {
+	
+	float: left;
+	width: 33.33%;
+	  display: block; /* Hide all elements by default */
+  }
+  
+  /* Clear floats after rows */ 
+  .row-card-contenu:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+  
+  /* Content */
+  .content {
+	background-color: white;
+	padding: 10px;
+	text-align: center;
+  }
+  .prix_contenu{
+   display: inline-block;
+   margin-right: 70px;
+   font-size: 24px;
+  }
+ .btn_produit{
+	display: inline-block;
+	
+ }
+  
+
+  
+  .btn:hover {
+	background-color: #ddd;
+  }
+  /*************************** style pour la page produit ******************************************/
+   .produit img{
+	border: 5px solid #282e34;
+		border-radius: 10px;
+		margin-bottom: 40px;
+		margin-left: 70px;
+   }
+  .designation_produit{
+	
+	margin:40px 200px 50px 200px;
+	text-align: justify;
+	text-justify: inter-word;
+	
+	padding: 18px;
+
+  }
+  .parag{
+	  text-align: center;
+  }
+  .prixproduit ul{
+	  height: 80px;
+	  padding: 10px 0;
+	  margin-top: 60px;
+	 
+  }
+  .prixproduit ul li{
+list-style-type: none;
+display: inline-block;
+
+}
+  .nom_produit{
+	margin-top: 40px;
+	  margin-bottom: 10px;
+	  
+  }
+  .type_produit{
+	margin-top: 40px;
+	margin-bottom: 25px; 
+  }
+  .modif{
+	  padding-left: 30px;
+	  padding-right: 30px;
+  }

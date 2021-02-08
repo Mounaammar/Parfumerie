@@ -52,13 +52,14 @@ $nbFidelite= $rowFidelite['NbPoints'];
  <div class="d-flex align-items-start changement">
 
   <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-     <img class="logo" src="logo.png" alt="logo" width="270 px" >
+     <img class="logo" src="img/logo.png" alt="logo" width="270 px" >
      <div class="trait"> </div>
     <a class="nav-link "  href="dashboard.php" ><i class="fas fa-clipboard-list"  style="margin-right: 9px;"></i>Liste des clients</a>
     <a class="nav-link"  href="ajoutClient.php"><i class="fas fa-address-book"style="margin-right: 9px;"></i>Ajout des clients</a>
     <a class="nav-link"  href="" ><i class="fas fa-cart-plus"style="margin-right: 9px;"></i>Gestion des commandes</a>
     <a class="nav-link"  href="" ><i class="fas fa-tasks"style="margin-right: 9px;"></i>Génération de factures</a>
     <a class="nav-link"  href=""><i class="fas fa-download"style="margin-right: 9px;"></i>Exportation liste de commandes</a>
+    <a class="nav-link" href="connexion.php"><<i class="fas fa-sign-out-alt" style="margin-right: 9px;"></i>Déconnexion</a>
   </div>
   
 </div> 
